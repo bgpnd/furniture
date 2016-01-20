@@ -1,0 +1,344 @@
+
+/*rating*/
+
+.starRating{
+    margin: 10px 0;
+}
+
+.starRating:not(old){
+    display        : inline-block;
+    width          : 7.5em;
+    height         : 1.4em;
+    font-size      : 10px;
+    overflow       : hidden;
+    vertical-align : bottom;
+}
+
+.starRating:not(old) > input{
+    margin-right : -100%;
+    opacity      : 0;
+}
+
+.starRating:not(old) > label{
+    display         : block;
+    float           : right;
+    position        : relative;
+    background      : url('star-off.svg');
+    background-size : contain;
+}
+
+.starRating:not(old) > label:before{
+    content         : '';
+    display         : block;
+    width           : 1.5em;
+    height          : 1.5em;
+    background      : url('star-on.svg');
+    background-size : contain;
+    opacity         : 0;
+    transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+    opacity : 1;
+}
+
+/*slide*/
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: center;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+/*sale*/
+
+.sale-label{
+    top: 20px;
+    left: 20px;
+    float: left;
+    z-index: 1;
+    text-align: left;
+    color: #fff;
+    font-size: 1rem;
+    background: #43BEE7;
+    font-weight: 700;
+    padding: 7px 2px 7px 0;
+    text-transform: uppercase;
+    position: absolute;
+}
+.sale-label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: url(../img/sale-label-left.png) no-repeat left top transparent;
+    z-index: 1;
+    width: 9px;
+    height: 30px;
+}
+.sale-label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url(../img/sale-label-right.png) no-repeat right top transparent;
+    z-index: 1;
+    width: 9px;
+    height: 30px;
+}
+
+/********************/
+
+body {
+    line-height: 1;
+    background: #EBEEF5;
+    color: #000;
+    font-family: 'Montserrat';
+}
+.list-unstyled{
+    list-style-type: none;
+}
+.contprodcntr{
+    padding: 23px 23px;
+    margin: 20px 0;
+    background: #fff;
+}
+.title-prodcntr{
+    color: #7fbc3a;
+}
+.nopad {
+    padding-left: 0;
+    padding-right: 0;
+}
+.nopadright{
+    padding-right: 0;
+}
+.nopadleft {
+    padding-left: 0;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.menu-vert {
+    height: 500px;
+    background: #66afe9;
+    margin: 30px 0 0;
+}
+.prodcntr {
+    background: #FFFFFF;
+    margin: 30px 0 0;
+}
+.img-prodcntr {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+.prodbrdr {
+    background: #fff;
+    border: 1px solid #fff;
+    float: left;
+}
+.prodbrdr:hover{
+    border: 1px solid #999;
+}
+.newsbrdr {
+    background: #fff;
+}
+.newsbrdr:hover img{
+    zoom: 120%;
+}
+.owl-carousel .item {
+    background: #fff;
+    padding: 1em;
+}
+
+.form-control{
+    height: 39px;
+    background: #f6f6f6;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.prodtitle {
+    font-size: 12px;
+}
+.prodprice {
+    font-size: 15px;
+    padding: 5px 0 0; 
+    color: #E74444;
+}
+.navbar-default {
+    background-color: #EBEEF5;
+    border-color: #EBEEF5;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1188px;
+    }
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    max-width: 100%;
+}
+
+.pro-sm {
+    margin-right: 10px;
+    width:100%;
+    height: auto;
+}
+.product {
+    background: #fff;
+    padding: 30px 0 115px;
+}
+.product:nth-child(2n+1){
+    background: #F9F9F9
+}
+.bar-view {
+    background: #fff;
+}
+.bar-view:nth-child(2n+1){
+    background: #F9F9F9
+}
+.navbar-default .navbar-nav > .active > a {
+    color: #5FB200;
+    background: #EBEEF5;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #5FB200;
+}
+.margintop {
+    margin-top: 25px;
+}
+.adv-hover{
+    width: 100%;
+    height: auto;
+}
+.colbrdrright{
+    border-right:1px solid #999;
+    height: 320px
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #5FB200;
+}
+.navbar-static-top {
+    z-index: 3;
+}
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+#xmenu{
+    font-size: 20px;
+}
+.padleri{
+    padding: 0 0 0 10px;
+    /*    margin: 0 auto;
+        width: 90%;*/
+}
+.prodmar{
+    margin-top: 65px;
+}
+.titlelist{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.breadcrumb{
+    font-weight: bolder;
+    color: #777;
+}
+.view{
+    color: #000 !important;
+    cursor: inherit;
+    display: inline;
+    vertical-align: middle;
+    float: left;
+    line-height: 40px;
+    padding: 0 0 0 10px;
+}
+.view:hover{
+    color: #000;
+    text-decoration: none;
+}
+.breadcrumb{
+    background: #EBEEF5;
+}
+
+.cbp-vm-options{
+    background: #fff;
+}
+.cbp-vm-add a:hover{
+    text-decoration: none;
+}
+.igbot{
+    padding-bottom: 25px;
+}
+.pagination{
+    margin: 0 0 25px 0!important;
+}
+.blackspan{
+    color: #000;
+}
+.linedetail{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.rightmargin{
+    margin-right: 50px;
+}
+.grow{
+    transition: all .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.1);
+}
+.wbg{
+    background: #fff;
+}
+.c{
+    width: 100%;
+}
+.nomar{
+    margin-right: 0;
+    margin-left: 0;
+}
